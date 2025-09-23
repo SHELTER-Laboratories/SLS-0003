@@ -112,6 +112,5 @@ PDE_DEPS__QUOTED :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 . \
-Programs/Main \
 driverlib/MSP430F5xx_6xx \
 
