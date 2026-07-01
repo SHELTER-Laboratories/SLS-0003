@@ -1,0 +1,10 @@
+{
+  "folders": [
+    {
+      "path": "file:///c%3A/Users/tcneu/workspace_ccstheia"
+    }
+  ],
+  "settings": {
+    "CCS.debug.breakpoint.showCore": false
+  }
+}
