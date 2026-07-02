@@ -166,21 +166,21 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXE_OUTPUTS += \
-5529\ DAQ\ Project.out 
+SLS-0003\ MSP430\ HS-AI\ Backplane.out 
 
 EXE_OUTPUTS__QUOTED += \
-"5529 DAQ Project.out" 
+"SLS-0003 MSP430 HS-AI Backplane.out" 
 
 
 # All Target
 all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
-	@$(MAKE) --no-print-directory -Onone "5529 DAQ Project.out"
+	@$(MAKE) --no-print-directory -Onone "SLS-0003 MSP430 HS-AI Backplane.out"
 
 # Tool invocations
-5529\ DAQ\ Project.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
+SLS-0003\ MSP430\ HS-AI\ Backplane.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: MSP430 Linker'
-	"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power="none" --define=__MSP430F5529__ --define=DEPRECATED -g --printf_support=full --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"5529 DAQ Project.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs2001/ccs/ccs_base/msp430/include" -i"C:/ti/ccs2001/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="5529 DAQ Project_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "5529 DAQ Project.out" $(ORDERED_OBJS)
+	"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power="none" --define=__MSP430F5529__ --define=DEPRECATED -g --printf_support=full --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"SLS-0003 MSP430 HS-AI Backplane.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs2001/ccs/ccs_base/msp430/include" -i"C:/ti/ccs2001/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="SLS-0003 MSP430 HS-AI Backplane_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "SLS-0003 MSP430 HS-AI Backplane.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
